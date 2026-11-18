@@ -1,0 +1,11 @@
+﻿dataset,split,label,count,percent
+QEvasion,train,Ambivalent,2040,59.1647
+QEvasion,train,Clear Reply,1052,30.5104
+QEvasion,train,Clear Non-Reply,356,10.3248
+QEvasion,test,Ambivalent,206,66.8831
+QEvasion,test,Clear Reply,79,25.6494
+QEvasion,test,Clear Non-Reply,23,7.4675
+QNLI,analysis-train,entailment,15002,50.0067
+QNLI,analysis-train,not_entailment,14998,49.9933
+QNLI,analysis-eval,not_entailment,1011,50.55
+QNLI,analysis-eval,entailment,989,49.45

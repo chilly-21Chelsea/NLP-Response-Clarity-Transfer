@@ -1,0 +1,85 @@
+{
+  "generated_at_utc": "2026-11-18T17:18:22+00:00",
+  "qevasion": {
+    "sources": {
+      "train": {
+        "path": "D:\\codex\\2026-11-19\\bang\\work\\nlp_submission\\data\\qevasion\\train_clean.csv",
+        "rows": 3448,
+        "sha256": "f5a04ed1a458f1fd8665e4521b4967d7aa066be52309bc0c674a274494bb72ac",
+        "raw_exact_duplicate_rows": 46
+      },
+      "test": {
+        "path": "D:\\codex\\2026-11-19\\bang\\work\\nlp_submission\\data\\qevasion\\test_clean.csv",
+        "rows": 308,
+        "sha256": "08876eb98d026cc14679d2756d4cea9fa3aa0e0950d5b427e57f4309997afeb1",
+        "raw_exact_duplicate_rows": 0
+      }
+    },
+    "mapping": {
+      "questions": [
+        {
+          "source": "question",
+          "target": "text_a"
+        },
+        {
+          "source": "interview_answer",
+          "target": "text_b"
+        },
+        {
+          "source": "clarity_label",
+          "target": "label"
+        }
+      ],
+      "binary_mapping": {
+        "Clear Reply": 1,
+        "Ambivalent": 0,
+        "Clear Non-Reply": 0
+      }
+    }
+  },
+  "qnli": {
+    "sources": {
+      "train": {
+        "path": "D:\\codex\\2026-11-19\\bang\\work\\nlp_submission\\data\\raw\\qnli\\qnli_train.parquet",
+        "rows": 104743,
+        "sha256": "ebc7cb70a5bbde0b0336c3d51f31bb4df4673e908e8874b090b52169b1365c6c"
+      },
+      "validation": {
+        "path": "D:\\codex\\2026-11-19\\bang\\work\\nlp_submission\\data\\raw\\qnli\\qnli_validation.parquet",
+        "rows": 5463,
+        "sha256": "e69311b81dc65589286091d9905a27617a90436dd215c7a59832fa8f4f336169"
+      }
+    },
+    "mapping": {
+      "fields": [
+        {
+          "source": "question",
+          "target": "text_a"
+        },
+        {
+          "source": "sentence",
+          "target": "text_b"
+        },
+        {
+          "source": "label",
+          "target": "label"
+        }
+      ],
+      "label_names": {
+        "0": "entailment",
+        "1": "not_entailment"
+      },
+      "binary_mapping": {
+        "entailment": 1,
+        "not_entailment": 0
+      }
+    }
+  },
+  "analysis_sampling": {
+    "seed": 42,
+    "train_pool_size": 30000,
+    "eval_pool_size": 2000,
+    "train_stratified_by": "label_name",
+    "eval_stratified_by": "label_name"
+  }
+}

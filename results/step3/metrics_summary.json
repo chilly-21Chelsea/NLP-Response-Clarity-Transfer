@@ -1,0 +1,209 @@
+{
+  "data": {
+    "qevasion_binary_rows": 3388,
+    "qnli_train_pool": 30000,
+    "qnli_eval_rows": 2000
+  },
+  "fractions": {
+    "10%": 0.1,
+    "30%": 0.3,
+    "100%": 1.0
+  },
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "runs": 38,
+  "table7": [
+    {
+      "setting": "original_qevasion_best",
+      "train_rows": 3388,
+      "test_rows": 308,
+      "accuracy": 0.512987012987013,
+      "macro_f1": 0.4499453790692593,
+      "main_conclusion": "源任务主结果，用于参照"
+    },
+    {
+      "setting": "direct_transfer",
+      "train_rows": 3388,
+      "test_rows": 2000,
+      "accuracy": 0.4945,
+      "macro_f1": 0.3672135898235928,
+      "main_conclusion": "跨领域直接迁移，衡量零目标标注时的可用性"
+    },
+    {
+      "setting": "target_baseline",
+      "train_rows": 30000,
+      "test_rows": 2000,
+      "accuracy": 0.591,
+      "macro_f1": 0.5868686868686869,
+      "main_conclusion": "仅使用目标域 100% 固定训练池"
+    },
+    {
+      "setting": "adapted_training",
+      "train_rows": 33388,
+      "test_rows": 2000,
+      "accuracy": 0.588,
+      "macro_f1": 0.5868829314466317,
+      "main_conclusion": "源任务全部数据加目标域 100% 训练池"
+    }
+  ],
+  "summary": [
+    {
+      "representation": "minilm",
+      "setting": "source_only_direct",
+      "fraction": "0%",
+      "accuracy_mean": 0.662,
+      "accuracy_std": 0.0,
+      "macro_f1_mean": 0.6619783666154634,
+      "macro_f1_std": 0.0,
+      "train_rows_mean": 3388.0,
+      "runs": 1
+    },
+    {
+      "representation": "minilm",
+      "setting": "source_plus_target",
+      "fraction": "10%",
+      "accuracy_mean": 0.727,
+      "accuracy_std": 0.0051961524227066526,
+      "macro_f1_mean": 0.7242662446676111,
+      "macro_f1_std": 0.004860420072241232,
+      "train_rows_mean": 6388.0,
+      "runs": 3
+    },
+    {
+      "representation": "minilm",
+      "setting": "source_plus_target",
+      "fraction": "30%",
+      "accuracy_mean": 0.7561666666666667,
+      "accuracy_std": 0.003403429642777038,
+      "macro_f1_mean": 0.7555746177036563,
+      "macro_f1_std": 0.0035560657413251243,
+      "train_rows_mean": 12388.0,
+      "runs": 3
+    },
+    {
+      "representation": "minilm",
+      "setting": "source_plus_target",
+      "fraction": "100%",
+      "accuracy_mean": 0.779,
+      "accuracy_std": 0.0,
+      "macro_f1_mean": 0.7789361125365231,
+      "macro_f1_std": 0.0,
+      "train_rows_mean": 33388.0,
+      "runs": 3
+    },
+    {
+      "representation": "minilm",
+      "setting": "target_only",
+      "fraction": "10%",
+      "accuracy_mean": 0.7623333333333333,
+      "accuracy_std": 0.008129165598838127,
+      "macro_f1_mean": 0.7622402622358941,
+      "macro_f1_std": 0.008183722541049793,
+      "train_rows_mean": 3000.0,
+      "runs": 3
+    },
+    {
+      "representation": "minilm",
+      "setting": "target_only",
+      "fraction": "30%",
+      "accuracy_mean": 0.7696666666666667,
+      "accuracy_std": 0.005299371031861536,
+      "macro_f1_mean": 0.7696606917498094,
+      "macro_f1_std": 0.005306184414167886,
+      "train_rows_mean": 9000.0,
+      "runs": 3
+    },
+    {
+      "representation": "minilm",
+      "setting": "target_only",
+      "fraction": "100%",
+      "accuracy_mean": 0.786,
+      "accuracy_std": 0.0,
+      "macro_f1_mean": 0.7859863031233999,
+      "macro_f1_std": 0.0,
+      "train_rows_mean": 30000.0,
+      "runs": 3
+    },
+    {
+      "representation": "tfidf",
+      "setting": "source_only_direct",
+      "fraction": "0%",
+      "accuracy_mean": 0.4945,
+      "accuracy_std": 0.0,
+      "macro_f1_mean": 0.3672135898235928,
+      "macro_f1_std": 0.0,
+      "train_rows_mean": 3388.0,
+      "runs": 1
+    },
+    {
+      "representation": "tfidf",
+      "setting": "source_plus_target",
+      "fraction": "10%",
+      "accuracy_mean": 0.5261666666666667,
+      "accuracy_std": 0.0036855573979160112,
+      "macro_f1_mean": 0.5105723719495625,
+      "macro_f1_std": 0.0036896517177319407,
+      "train_rows_mean": 6388.0,
+      "runs": 3
+    },
+    {
+      "representation": "tfidf",
+      "setting": "source_plus_target",
+      "fraction": "30%",
+      "accuracy_mean": 0.5698333333333333,
+      "accuracy_std": 0.0088081401744825,
+      "macro_f1_mean": 0.5687626605607164,
+      "macro_f1_std": 0.009491374018166077,
+      "train_rows_mean": 12388.0,
+      "runs": 3
+    },
+    {
+      "representation": "tfidf",
+      "setting": "source_plus_target",
+      "fraction": "100%",
+      "accuracy_mean": 0.588,
+      "accuracy_std": 0.0,
+      "macro_f1_mean": 0.5868829314466317,
+      "macro_f1_std": 0.0,
+      "train_rows_mean": 33388.0,
+      "runs": 3
+    },
+    {
+      "representation": "tfidf",
+      "setting": "target_only",
+      "fraction": "10%",
+      "accuracy_mean": 0.5641666666666666,
+      "accuracy_std": 0.0111168040971015,
+      "macro_f1_mean": 0.561342877778788,
+      "macro_f1_std": 0.012237431433417302,
+      "train_rows_mean": 3000.0,
+      "runs": 3
+    },
+    {
+      "representation": "tfidf",
+      "setting": "target_only",
+      "fraction": "30%",
+      "accuracy_mean": 0.584,
+      "accuracy_std": 0.006383572667401815,
+      "macro_f1_mean": 0.580552350771413,
+      "macro_f1_std": 0.00633476992917695,
+      "train_rows_mean": 9000.0,
+      "runs": 3
+    },
+    {
+      "representation": "tfidf",
+      "setting": "target_only",
+      "fraction": "100%",
+      "accuracy_mean": 0.591,
+      "accuracy_std": 0.0,
+      "macro_f1_mean": 0.5868686868686869,
+      "macro_f1_std": 0.0,
+      "train_rows_mean": 30000.0,
+      "runs": 3
+    }
+  ],
+  "elapsed_seconds": 264.823
+}

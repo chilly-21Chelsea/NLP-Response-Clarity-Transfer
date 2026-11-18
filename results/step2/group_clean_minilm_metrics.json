@@ -1,0 +1,9 @@
+{
+  "accuracy": 0.5421052631578948,
+  "macro_precision": 0.4764049764049764,
+  "macro_recall": 0.5598879551820729,
+  "macro_f1": 0.483278552111504,
+  "model": "minilm_chunk_interaction_logreg",
+  "remaining_rows": 190,
+  "removed_rows": 118
+}

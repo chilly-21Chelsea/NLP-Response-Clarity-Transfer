@@ -1,0 +1,7 @@
+﻿error_type,pair,count
+长而空泛/隐式回答,Ambivalent->Clear Reply,73
+关键短句被长回答淹没,Clear Reply->Ambivalent,29
+部分回答/拒答边界,Ambivalent->Clear Non-Reply,27
+明确拒答误判,Clear Reply->Clear Non-Reply,10
+主题转移,Clear Non-Reply->Clear Reply,7
+标签边界模糊,Clear Non-Reply->Ambivalent,4

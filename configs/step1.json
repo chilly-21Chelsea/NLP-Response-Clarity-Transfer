@@ -1,0 +1,12 @@
+{
+  "qevasion_dir": "data/qevasion",
+  "minilm_cache_dir": "data/models_clean",
+  "analysis_train_size": 30000,
+  "analysis_eval_size": 2000,
+  "seed": 42,
+  "qnli": {
+    "primary_train_url": "https://hf-mirror.com/datasets/nyu-mll/glue/resolve/main/qnli/train-00000-of-00001.parquet",
+    "primary_validation_url": "https://hf-mirror.com/datasets/nyu-mll/glue/resolve/main/qnli/validation-00000-of-00001.parquet",
+    "fallback_zip_url": "https://dl.fbaipublicfiles.com/glue/data/QNLI.zip"
+  }
+}

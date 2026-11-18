@@ -1,0 +1,9 @@
+{
+  "accuracy": 0.5263157894736842,
+  "macro_precision": 0.4166469241096107,
+  "macro_recall": 0.4324929971988795,
+  "macro_f1": 0.41936870547776955,
+  "model": "tfidf_uni_lr_balanced",
+  "remaining_rows": 190,
+  "removed_rows": 118
+}

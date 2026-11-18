@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-11-19T01:18:22.8115513+08:00",
+  "status": "pass",
+  "mismatch_count": 0,
+  "files": [
+    {
+      "path": "data\\processed\\qevasion_train.parquet",
+      "before_sha256": "3131F627F3C662AA2C5BA78415238C8028612C8FA27B6FF922D7B653A2CB4B02",
+      "after_sha256": "3131F627F3C662AA2C5BA78415238C8028612C8FA27B6FF922D7B653A2CB4B02",
+      "matches": true
+    },
+    {
+      "path": "data\\processed\\qevasion_test.parquet",
+      "before_sha256": "BD64BC533406E5EF335C81C45704F2EB9C929CC5836A3B4E066FF15ADDDF341F",
+      "after_sha256": "BD64BC533406E5EF335C81C45704F2EB9C929CC5836A3B4E066FF15ADDDF341F",
+      "matches": true
+    },
+    {
+      "path": "data\\processed\\qnli_analysis_train.parquet",
+      "before_sha256": "D9F5490E559DAFAE5D443252E58952516E31DD15319DD14A3B535F89170AD565",
+      "after_sha256": "D9F5490E559DAFAE5D443252E58952516E31DD15319DD14A3B535F89170AD565",
+      "matches": true
+    },
+    {
+      "path": "data\\processed\\qnli_analysis_eval.parquet",
+      "before_sha256": "EFC0A9E23EA7BA84498795B2E7DD3A5800A02E4B21B409D0C79E5F7E05276EC3",
+      "after_sha256": "EFC0A9E23EA7BA84498795B2E7DD3A5800A02E4B21B409D0C79E5F7E05276EC3",
+      "matches": true
+    },
+    {
+      "path": "results\\step1\\table1_data_statistics.csv",
+      "before_sha256": "67F0089BFCD9D8E83B492C690638DDB5CB9BDA2B9707365D595805CC094428CB",
+      "after_sha256": "67F0089BFCD9D8E83B492C690638DDB5CB9BDA2B9707365D595805CC094428CB",
+      "matches": true
+    },
+    {
+      "path": "results\\step1\\label_distribution.csv",
+      "before_sha256": "C332ACA2F9F1E4FE35EDB07412BE701987B2E66F589BFD772083B6F2E9CFC610",
+      "after_sha256": "C332ACA2F9F1E4FE35EDB07412BE701987B2E66F589BFD772083B6F2E9CFC610",
+      "matches": true
+    },
+    {
+      "path": "results\\step1\\length_distribution.csv",
+      "before_sha256": "B5E1BB8C00B17163DCC3CE69DDFD65D22E64901517F06C39BA53F82A214D725B",
+      "after_sha256": "B5E1BB8C00B17163DCC3CE69DDFD65D22E64901517F06C39BA53F82A214D725B",
+      "matches": true
+    }
+  ]
+}

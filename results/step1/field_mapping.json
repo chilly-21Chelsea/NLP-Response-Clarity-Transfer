@@ -1,0 +1,47 @@
+{
+  "qevasion": {
+    "questions": [
+      {
+        "source": "question",
+        "target": "text_a"
+      },
+      {
+        "source": "interview_answer",
+        "target": "text_b"
+      },
+      {
+        "source": "clarity_label",
+        "target": "label"
+      }
+    ],
+    "binary_mapping": {
+      "Clear Reply": 1,
+      "Ambivalent": 0,
+      "Clear Non-Reply": 0
+    }
+  },
+  "qnli": {
+    "fields": [
+      {
+        "source": "question",
+        "target": "text_a"
+      },
+      {
+        "source": "sentence",
+        "target": "text_b"
+      },
+      {
+        "source": "label",
+        "target": "label"
+      }
+    ],
+    "label_names": {
+      "0": "entailment",
+      "1": "not_entailment"
+    },
+    "binary_mapping": {
+      "entailment": 1,
+      "not_entailment": 0
+    }
+  }
+}

@@ -1,0 +1,5 @@
+﻿setting,train_rows,test_rows,accuracy,macro_f1,main_conclusion
+original_qevasion_best,3388,308,0.512987012987013,0.4499453790692593,源任务主结果，用于参照
+direct_transfer,3388,2000,0.4945,0.3672135898235928,跨领域直接迁移，衡量零目标标注时的可用性
+target_baseline,30000,2000,0.591,0.5868686868686869,仅使用目标域 100% 固定训练池
+adapted_training,33388,2000,0.588,0.5868829314466317,源任务全部数据加目标域 100% 训练池

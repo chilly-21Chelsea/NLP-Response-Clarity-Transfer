@@ -1,0 +1,715 @@
+{
+  "qevasion": {
+    "metrics": {
+      "dataset": {
+        "train_rows_source": 3448,
+        "train_rows_after_normalized_deduplication": 3388,
+        "normalized_duplicates_removed": 60,
+        "test_rows": 308
+      },
+      "comparisons": [
+        {
+          "accuracy": 0.512987012987013,
+          "macro_precision": 0.446940406858187,
+          "macro_recall": 0.5142104503849833,
+          "macro_f1": 0.44994537906925935,
+          "model": "minilm_chunk_interaction_logreg",
+          "ngram": "n/a",
+          "class_weight": "balanced",
+          "train_rows": 3388,
+          "test_rows": 308
+        },
+        {
+          "accuracy": 0.5227272727272727,
+          "macro_precision": 0.40620094191522765,
+          "macro_recall": 0.4182736578128534,
+          "macro_f1": 0.4093629763630073,
+          "model": "tfidf_uni_lr_balanced",
+          "ngram": "unigram",
+          "class_weight": "balanced",
+          "train_rows": 3388,
+          "test_rows": 308
+        },
+        {
+          "accuracy": 0.538961038961039,
+          "macro_precision": 0.4232896920523696,
+          "macro_recall": 0.39788192422161783,
+          "macro_f1": 0.4080391783669824,
+          "model": "tfidf_uni_bi_lr_balanced",
+          "ngram": "unigram+bigram",
+          "class_weight": "balanced",
+          "train_rows": 3388,
+          "test_rows": 308
+        },
+        {
+          "accuracy": 0.685064935064935,
+          "macro_precision": 0.7589388696655132,
+          "macro_recall": 0.3931860725652904,
+          "macro_f1": 0.39079124579124574,
+          "model": "tfidf_uni_bi_lr_none",
+          "ngram": "unigram+bigram",
+          "class_weight": "none",
+          "train_rows": 3388,
+          "test_rows": 308
+        },
+        {
+          "accuracy": 0.6233766233766234,
+          "macro_precision": 0.48170362292499697,
+          "macro_recall": 0.3650430223010652,
+          "macro_f1": 0.3649745316411983,
+          "model": "tfidf_uni_lr_none",
+          "ngram": "unigram",
+          "class_weight": "none",
+          "train_rows": 3388,
+          "test_rows": 308
+        },
+        {
+          "accuracy": 0.42857142857142855,
+          "macro_precision": 0.3595732714682414,
+          "macro_recall": 0.40229992537220394,
+          "macro_f1": 0.35764970516743566,
+          "model": "minilm_concat_logreg",
+          "ngram": "n/a",
+          "class_weight": "balanced",
+          "train_rows": 3388,
+          "test_rows": 308
+        },
+        {
+          "accuracy": 0.6688311688311688,
+          "macro_precision": 0.22294372294372292,
+          "macro_recall": 0.3333333333333333,
+          "macro_f1": 0.26718547341115434,
+          "model": "majority_baseline",
+          "ngram": "n/a",
+          "class_weight": "n/a",
+          "train_rows": 3388,
+          "test_rows": 308
+        }
+      ],
+      "best_model": "minilm_chunk_interaction_logreg",
+      "grouped_cross_validation": {
+        "model": "tfidf_uni_lr_balanced",
+        "splitter": "GroupKFold_by_interview_url",
+        "folds": [
+          0.4571286226790117,
+          0.48186615290899026,
+          0.4608138602810327,
+          0.46546877779754486,
+          0.4618175149891568
+        ],
+        "mean_macro_f1": 0.4654189857311472,
+        "std_macro_f1": 0.008641986795624168,
+        "groups": 287
+      },
+      "group_clean_test": {
+        "accuracy": 0.5263157894736842,
+        "macro_precision": 0.4166469241096107,
+        "macro_recall": 0.4324929971988795,
+        "macro_f1": 0.41936870547776955,
+        "model": "tfidf_uni_lr_balanced",
+        "remaining_rows": 190,
+        "removed_rows": 118
+      },
+      "group_clean_improved_minilm": {
+        "accuracy": 0.5421052631578948,
+        "macro_precision": 0.4764049764049764,
+        "macro_recall": 0.5598879551820729,
+        "macro_f1": 0.483278552111504,
+        "model": "minilm_chunk_interaction_logreg",
+        "remaining_rows": 190,
+        "removed_rows": 118
+      },
+      "minilm_c_selection": {
+        "selected_c": 1.0,
+        "scores": {
+          "0.3": 0.4934460079165254,
+          "1.0": 0.4937190529993923,
+          "3.0": 0.4787063243577975,
+          "10.0": 0.47010616612028855
+        }
+      },
+      "elapsed_seconds": 35.648
+    },
+    "table3": [
+      {
+        "accuracy": 0.512987012987013,
+        "macro_precision": 0.446940406858187,
+        "macro_recall": 0.5142104503849833,
+        "macro_f1": 0.4499453790692593,
+        "model": "minilm_chunk_interaction_logreg",
+        "ngram": NaN,
+        "class_weight": "balanced",
+        "train_rows": 3388,
+        "test_rows": 308
+      },
+      {
+        "accuracy": 0.5227272727272727,
+        "macro_precision": 0.4062009419152276,
+        "macro_recall": 0.4182736578128534,
+        "macro_f1": 0.4093629763630073,
+        "model": "tfidf_uni_lr_balanced",
+        "ngram": "unigram",
+        "class_weight": "balanced",
+        "train_rows": 3388,
+        "test_rows": 308
+      },
+      {
+        "accuracy": 0.538961038961039,
+        "macro_precision": 0.4232896920523696,
+        "macro_recall": 0.3978819242216178,
+        "macro_f1": 0.4080391783669824,
+        "model": "tfidf_uni_bi_lr_balanced",
+        "ngram": "unigram+bigram",
+        "class_weight": "balanced",
+        "train_rows": 3388,
+        "test_rows": 308
+      },
+      {
+        "accuracy": 0.685064935064935,
+        "macro_precision": 0.7589388696655132,
+        "macro_recall": 0.3931860725652904,
+        "macro_f1": 0.3907912457912457,
+        "model": "tfidf_uni_bi_lr_none",
+        "ngram": "unigram+bigram",
+        "class_weight": "none",
+        "train_rows": 3388,
+        "test_rows": 308
+      },
+      {
+        "accuracy": 0.6233766233766234,
+        "macro_precision": 0.4817036229249969,
+        "macro_recall": 0.3650430223010652,
+        "macro_f1": 0.3649745316411983,
+        "model": "tfidf_uni_lr_none",
+        "ngram": "unigram",
+        "class_weight": "none",
+        "train_rows": 3388,
+        "test_rows": 308
+      },
+      {
+        "accuracy": 0.4285714285714285,
+        "macro_precision": 0.3595732714682414,
+        "macro_recall": 0.4022999253722039,
+        "macro_f1": 0.3576497051674356,
+        "model": "minilm_concat_logreg",
+        "ngram": NaN,
+        "class_weight": "balanced",
+        "train_rows": 3388,
+        "test_rows": 308
+      },
+      {
+        "accuracy": 0.6688311688311688,
+        "macro_precision": 0.2229437229437229,
+        "macro_recall": 0.3333333333333333,
+        "macro_f1": 0.2671854734111543,
+        "model": "majority_baseline",
+        "ngram": NaN,
+        "class_weight": NaN,
+        "train_rows": 3388,
+        "test_rows": 308
+      }
+    ]
+  },
+  "transfer": {
+    "metrics": {
+      "data": {
+        "qevasion_binary_rows": 3388,
+        "qnli_train_pool": 30000,
+        "qnli_eval_rows": 2000
+      },
+      "fractions": {
+        "10%": 0.1,
+        "30%": 0.3,
+        "100%": 1.0
+      },
+      "seeds": [
+        42,
+        52,
+        62
+      ],
+      "runs": 38,
+      "table7": [
+        {
+          "setting": "original_qevasion_best",
+          "train_rows": 3388,
+          "test_rows": 308,
+          "accuracy": 0.512987012987013,
+          "macro_f1": 0.4499453790692593,
+          "main_conclusion": "源任务主结果，用于参照"
+        },
+        {
+          "setting": "direct_transfer",
+          "train_rows": 3388,
+          "test_rows": 2000,
+          "accuracy": 0.4945,
+          "macro_f1": 0.3672135898235928,
+          "main_conclusion": "跨领域直接迁移，衡量零目标标注时的可用性"
+        },
+        {
+          "setting": "target_baseline",
+          "train_rows": 30000,
+          "test_rows": 2000,
+          "accuracy": 0.591,
+          "macro_f1": 0.5868686868686869,
+          "main_conclusion": "仅使用目标域 100% 固定训练池"
+        },
+        {
+          "setting": "adapted_training",
+          "train_rows": 33388,
+          "test_rows": 2000,
+          "accuracy": 0.588,
+          "macro_f1": 0.5868829314466317,
+          "main_conclusion": "源任务全部数据加目标域 100% 训练池"
+        }
+      ],
+      "summary": [
+        {
+          "representation": "minilm",
+          "setting": "source_only_direct",
+          "fraction": "0%",
+          "accuracy_mean": 0.662,
+          "accuracy_std": 0.0,
+          "macro_f1_mean": 0.6619783666154634,
+          "macro_f1_std": 0.0,
+          "train_rows_mean": 3388.0,
+          "runs": 1
+        },
+        {
+          "representation": "minilm",
+          "setting": "source_plus_target",
+          "fraction": "10%",
+          "accuracy_mean": 0.727,
+          "accuracy_std": 0.0051961524227066526,
+          "macro_f1_mean": 0.7242662446676111,
+          "macro_f1_std": 0.004860420072241232,
+          "train_rows_mean": 6388.0,
+          "runs": 3
+        },
+        {
+          "representation": "minilm",
+          "setting": "source_plus_target",
+          "fraction": "30%",
+          "accuracy_mean": 0.7561666666666667,
+          "accuracy_std": 0.003403429642777038,
+          "macro_f1_mean": 0.7555746177036563,
+          "macro_f1_std": 0.0035560657413251243,
+          "train_rows_mean": 12388.0,
+          "runs": 3
+        },
+        {
+          "representation": "minilm",
+          "setting": "source_plus_target",
+          "fraction": "100%",
+          "accuracy_mean": 0.779,
+          "accuracy_std": 0.0,
+          "macro_f1_mean": 0.7789361125365231,
+          "macro_f1_std": 0.0,
+          "train_rows_mean": 33388.0,
+          "runs": 3
+        },
+        {
+          "representation": "minilm",
+          "setting": "target_only",
+          "fraction": "10%",
+          "accuracy_mean": 0.7623333333333333,
+          "accuracy_std": 0.008129165598838127,
+          "macro_f1_mean": 0.7622402622358941,
+          "macro_f1_std": 0.008183722541049793,
+          "train_rows_mean": 3000.0,
+          "runs": 3
+        },
+        {
+          "representation": "minilm",
+          "setting": "target_only",
+          "fraction": "30%",
+          "accuracy_mean": 0.7696666666666667,
+          "accuracy_std": 0.005299371031861536,
+          "macro_f1_mean": 0.7696606917498094,
+          "macro_f1_std": 0.005306184414167886,
+          "train_rows_mean": 9000.0,
+          "runs": 3
+        },
+        {
+          "representation": "minilm",
+          "setting": "target_only",
+          "fraction": "100%",
+          "accuracy_mean": 0.786,
+          "accuracy_std": 0.0,
+          "macro_f1_mean": 0.7859863031233999,
+          "macro_f1_std": 0.0,
+          "train_rows_mean": 30000.0,
+          "runs": 3
+        },
+        {
+          "representation": "tfidf",
+          "setting": "source_only_direct",
+          "fraction": "0%",
+          "accuracy_mean": 0.4945,
+          "accuracy_std": 0.0,
+          "macro_f1_mean": 0.3672135898235928,
+          "macro_f1_std": 0.0,
+          "train_rows_mean": 3388.0,
+          "runs": 1
+        },
+        {
+          "representation": "tfidf",
+          "setting": "source_plus_target",
+          "fraction": "10%",
+          "accuracy_mean": 0.5261666666666667,
+          "accuracy_std": 0.0036855573979160112,
+          "macro_f1_mean": 0.5105723719495625,
+          "macro_f1_std": 0.0036896517177319407,
+          "train_rows_mean": 6388.0,
+          "runs": 3
+        },
+        {
+          "representation": "tfidf",
+          "setting": "source_plus_target",
+          "fraction": "30%",
+          "accuracy_mean": 0.5698333333333333,
+          "accuracy_std": 0.0088081401744825,
+          "macro_f1_mean": 0.5687626605607164,
+          "macro_f1_std": 0.009491374018166077,
+          "train_rows_mean": 12388.0,
+          "runs": 3
+        },
+        {
+          "representation": "tfidf",
+          "setting": "source_plus_target",
+          "fraction": "100%",
+          "accuracy_mean": 0.588,
+          "accuracy_std": 0.0,
+          "macro_f1_mean": 0.5868829314466317,
+          "macro_f1_std": 0.0,
+          "train_rows_mean": 33388.0,
+          "runs": 3
+        },
+        {
+          "representation": "tfidf",
+          "setting": "target_only",
+          "fraction": "10%",
+          "accuracy_mean": 0.5641666666666666,
+          "accuracy_std": 0.0111168040971015,
+          "macro_f1_mean": 0.561342877778788,
+          "macro_f1_std": 0.012237431433417302,
+          "train_rows_mean": 3000.0,
+          "runs": 3
+        },
+        {
+          "representation": "tfidf",
+          "setting": "target_only",
+          "fraction": "30%",
+          "accuracy_mean": 0.584,
+          "accuracy_std": 0.006383572667401815,
+          "macro_f1_mean": 0.580552350771413,
+          "macro_f1_std": 0.00633476992917695,
+          "train_rows_mean": 9000.0,
+          "runs": 3
+        },
+        {
+          "representation": "tfidf",
+          "setting": "target_only",
+          "fraction": "100%",
+          "accuracy_mean": 0.591,
+          "accuracy_std": 0.0,
+          "macro_f1_mean": 0.5868686868686869,
+          "macro_f1_std": 0.0,
+          "train_rows_mean": 30000.0,
+          "runs": 3
+        }
+      ],
+      "elapsed_seconds": 264.823
+    },
+    "table7": [
+      {
+        "setting": "original_qevasion_best",
+        "train_rows": 3388,
+        "test_rows": 308,
+        "accuracy": 0.512987012987013,
+        "macro_f1": 0.4499453790692593,
+        "main_conclusion": "源任务主结果，用于参照"
+      },
+      {
+        "setting": "direct_transfer",
+        "train_rows": 3388,
+        "test_rows": 2000,
+        "accuracy": 0.4945,
+        "macro_f1": 0.3672135898235928,
+        "main_conclusion": "跨领域直接迁移，衡量零目标标注时的可用性"
+      },
+      {
+        "setting": "target_baseline",
+        "train_rows": 30000,
+        "test_rows": 2000,
+        "accuracy": 0.591,
+        "macro_f1": 0.5868686868686869,
+        "main_conclusion": "仅使用目标域 100% 固定训练池"
+      },
+      {
+        "setting": "adapted_training",
+        "train_rows": 33388,
+        "test_rows": 2000,
+        "accuracy": 0.588,
+        "macro_f1": 0.5868829314466317,
+        "main_conclusion": "源任务全部数据加目标域 100% 训练池"
+      }
+    ],
+    "efficiency": [
+      {
+        "representation": "minilm",
+        "setting": "source_only_direct",
+        "fraction": "0%",
+        "accuracy_mean": 0.662,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 0.6619783666154634,
+        "macro_f1_std": 0.0,
+        "train_rows_mean": 3388.0,
+        "runs": 1
+      },
+      {
+        "representation": "minilm",
+        "setting": "source_plus_target",
+        "fraction": "10%",
+        "accuracy_mean": 0.727,
+        "accuracy_std": 0.0051961524227066,
+        "macro_f1_mean": 0.7242662446676111,
+        "macro_f1_std": 0.0048604200722412,
+        "train_rows_mean": 6388.0,
+        "runs": 3
+      },
+      {
+        "representation": "minilm",
+        "setting": "source_plus_target",
+        "fraction": "30%",
+        "accuracy_mean": 0.7561666666666667,
+        "accuracy_std": 0.003403429642777,
+        "macro_f1_mean": 0.7555746177036563,
+        "macro_f1_std": 0.0035560657413251,
+        "train_rows_mean": 12388.0,
+        "runs": 3
+      },
+      {
+        "representation": "minilm",
+        "setting": "source_plus_target",
+        "fraction": "100%",
+        "accuracy_mean": 0.779,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 0.7789361125365231,
+        "macro_f1_std": 0.0,
+        "train_rows_mean": 33388.0,
+        "runs": 3
+      },
+      {
+        "representation": "minilm",
+        "setting": "target_only",
+        "fraction": "10%",
+        "accuracy_mean": 0.7623333333333333,
+        "accuracy_std": 0.0081291655988381,
+        "macro_f1_mean": 0.7622402622358941,
+        "macro_f1_std": 0.0081837225410497,
+        "train_rows_mean": 3000.0,
+        "runs": 3
+      },
+      {
+        "representation": "minilm",
+        "setting": "target_only",
+        "fraction": "30%",
+        "accuracy_mean": 0.7696666666666667,
+        "accuracy_std": 0.0052993710318615,
+        "macro_f1_mean": 0.7696606917498094,
+        "macro_f1_std": 0.0053061844141678,
+        "train_rows_mean": 9000.0,
+        "runs": 3
+      },
+      {
+        "representation": "minilm",
+        "setting": "target_only",
+        "fraction": "100%",
+        "accuracy_mean": 0.786,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 0.7859863031233999,
+        "macro_f1_std": 0.0,
+        "train_rows_mean": 30000.0,
+        "runs": 3
+      },
+      {
+        "representation": "tfidf",
+        "setting": "source_only_direct",
+        "fraction": "0%",
+        "accuracy_mean": 0.4945,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 0.3672135898235928,
+        "macro_f1_std": 0.0,
+        "train_rows_mean": 3388.0,
+        "runs": 1
+      },
+      {
+        "representation": "tfidf",
+        "setting": "source_plus_target",
+        "fraction": "10%",
+        "accuracy_mean": 0.5261666666666667,
+        "accuracy_std": 0.003685557397916,
+        "macro_f1_mean": 0.5105723719495625,
+        "macro_f1_std": 0.0036896517177319,
+        "train_rows_mean": 6388.0,
+        "runs": 3
+      },
+      {
+        "representation": "tfidf",
+        "setting": "source_plus_target",
+        "fraction": "30%",
+        "accuracy_mean": 0.5698333333333333,
+        "accuracy_std": 0.0088081401744825,
+        "macro_f1_mean": 0.5687626605607164,
+        "macro_f1_std": 0.009491374018166,
+        "train_rows_mean": 12388.0,
+        "runs": 3
+      },
+      {
+        "representation": "tfidf",
+        "setting": "source_plus_target",
+        "fraction": "100%",
+        "accuracy_mean": 0.588,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 0.5868829314466317,
+        "macro_f1_std": 0.0,
+        "train_rows_mean": 33388.0,
+        "runs": 3
+      },
+      {
+        "representation": "tfidf",
+        "setting": "target_only",
+        "fraction": "10%",
+        "accuracy_mean": 0.5641666666666666,
+        "accuracy_std": 0.0111168040971015,
+        "macro_f1_mean": 0.561342877778788,
+        "macro_f1_std": 0.0122374314334173,
+        "train_rows_mean": 3000.0,
+        "runs": 3
+      },
+      {
+        "representation": "tfidf",
+        "setting": "target_only",
+        "fraction": "30%",
+        "accuracy_mean": 0.584,
+        "accuracy_std": 0.0063835726674018,
+        "macro_f1_mean": 0.580552350771413,
+        "macro_f1_std": 0.0063347699291769,
+        "train_rows_mean": 9000.0,
+        "runs": 3
+      },
+      {
+        "representation": "tfidf",
+        "setting": "target_only",
+        "fraction": "100%",
+        "accuracy_mean": 0.591,
+        "accuracy_std": 0.0,
+        "macro_f1_mean": 0.5868686868686869,
+        "macro_f1_std": 0.0,
+        "train_rows_mean": 30000.0,
+        "runs": 3
+      }
+    ]
+  },
+  "errors": {
+    "selected_cases": [
+      {
+        "row_id": 245,
+        "question_summary_zh": "美国在中东是否因信誉问题而受到限制？",
+        "answer_summary_zh": "回答先否认存在信誉担忧，随后转向黎巴嫩驻军、后勤支援和达尔富尔等背景。",
+        "true_label": "Ambivalent",
+        "predicted_label": "Clear Reply",
+        "confidence": 0.90097576,
+        "error_type": "长而空泛",
+        "reason_zh": "开头含有短否定句，但后续大量背景铺陈使回答是否真正解决问题变得模糊。",
+        "question_excerpt": "Is it because there is a fear that the U.S. doesn't have credibility in the region?",
+        "answer_excerpt": "No, I think, first of all, there has been a history in Lebanon with U.S.troops. Secondly, I have said that if the international force would like some help with logistics and command and control, we'd be willing to offer logistics and command and control. There are some places where—it's like Darfur; people say to me, Why don't you commit U.S. troops to Darfur as part of an international peacekeeping? And the answer there is that those troops would be—would create a sensation around the world that may not enable...",
+        "url": "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-with-secretary-state-condoleezza-rice-crawford-texas"
+      },
+      {
+        "row_id": 267,
+        "question_summary_zh": "是否正在考虑设置禁飞区？",
+        "answer_summary_zh": "回答先说禁飞区是正在考虑的一个选项，随后扩展到利比亚、墨西哥和其他外交议题。",
+        "true_label": "Clear Reply",
+        "predicted_label": "Ambivalent",
+        "confidence": 0.9275657,
+        "error_type": "关键短句被长回答淹没",
+        "reason_zh": "明确回答只出现在前段，后续大段延伸使模型把整段判为含糊回答。",
+        "question_excerpt": "Is a no-fly zone under consideration as an option?",
+        "answer_excerpt": "That is one of the options that we would be looking at. First, in terms of Libya, I recognize and applaud the efforts undertaken by President Obama, as I said previously, to seek a solution in line with international law for this situation. For Mexico, it's absolutely clear that we cannot--it's not possible that civilians be massacred and not go punished, using weapons that are for the exclusive use of war. We must do everything that we can to avoid or stop that massacre.Mexico indeed has presented a resolution...",
+        "url": "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-with-president-felipe-de-jesus-calderon-hinojosa-mexico"
+      },
+      {
+        "row_id": 157,
+        "question_summary_zh": "是否认为自己在使用赦免权时过于吝啬？",
+        "answer_summary_zh": "回答称没有把标准文件带在身边，但随后解释司法部和白宫法律顾问有严格标准。",
+        "true_label": "Ambivalent",
+        "predicted_label": "Clear Non-Reply",
+        "confidence": 0.87868804,
+        "error_type": "部分回答",
+        "reason_zh": "回答既包含无法直接比较的保留，也包含制度性解释，介于含糊回答与明确拒答之间。",
+        "question_excerpt": "Do you consider yourself to be stingy when it comes to pardons?",
+        "answer_excerpt": "You know, I don't have the criterion in front of me, Mark, but we have a strict criterion that we utilize—we being the Justice Department and the White House Counsel. And I, frankly, haven't compared the number of pardons I've given, to any other President. Perhaps I should. But I don't think a scorecard should, necessarily, be the guidepost for pardoning people.McKinnon [John McKinnon, Wall Street Journal]. I'm going to go to you, Jackson [David Jackson, USA Today], and kind of work around.",
+        "url": "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-5"
+      },
+      {
+        "row_id": 188,
+        "question_summary_zh": "为什么这项安排是好主意或坏主意？",
+        "answer_summary_zh": "回答先回避被拉入选举话题，随后转向汽油价格和白宫关注的问题。",
+        "true_label": "Clear Non-Reply",
+        "predicted_label": "Clear Reply",
+        "confidence": 0.79132,
+        "error_type": "主题转移",
+        "reason_zh": "回答没有处理原问题中的判断理由，而是切换到另一组政策和政治议题。",
+        "question_excerpt": "Why would this be a good idea or not?",
+        "answer_excerpt": "No, I appreciate you trying to drag me in the '08 race. And this is the first attempt to do so, and I can understand why you would want to do that.I will tell you that, first of all, the American people have got to understand that here in the White House, we are concerned about high gasoline prices. We're concerned about high food prices. We're concerned about people staying in their homes. And we're concerned about student loans, just like I described. And Congress can be helpful. Congress, they can show leader...",
+        "url": "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-1129"
+      },
+      {
+        "row_id": 212,
+        "question_summary_zh": "事情会在接下来几个月发生吗？",
+        "answer_summary_zh": "回答仅给出“明年某个时候”这一粗略时间，没有确认具体月份或条件。",
+        "true_label": "Ambivalent",
+        "predicted_label": "Clear Non-Reply",
+        "confidence": 0.82510465,
+        "error_type": "标签边界模糊",
+        "reason_zh": "短回答提供了部分时间信息，但不足以构成完整明确回答，因此人工标签与模型判断存在边界冲突。",
+        "question_excerpt": "Will it happen in the next months?",
+        "answer_excerpt": "Sometime next year, I would say.",
+        "url": "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-washington-dc"
+      }
+    ],
+    "type_counts": [
+      {
+        "error_type": "长而空泛/隐式回答",
+        "pair": "Ambivalent->Clear Reply",
+        "count": 73
+      },
+      {
+        "error_type": "关键短句被长回答淹没",
+        "pair": "Clear Reply->Ambivalent",
+        "count": 29
+      },
+      {
+        "error_type": "部分回答/拒答边界",
+        "pair": "Ambivalent->Clear Non-Reply",
+        "count": 27
+      },
+      {
+        "error_type": "明确拒答误判",
+        "pair": "Clear Reply->Clear Non-Reply",
+        "count": 10
+      },
+      {
+        "error_type": "主题转移",
+        "pair": "Clear Non-Reply->Clear Reply",
+        "count": 7
+      },
+      {
+        "error_type": "标签边界模糊",
+        "pair": "Clear Non-Reply->Ambivalent",
+        "count": 4
+      }
+    ]
+  }
+}

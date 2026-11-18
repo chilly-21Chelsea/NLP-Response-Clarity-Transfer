@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+data/processed/
+data/qevasion/
+data/hf_cache/
+logs/*.log
+results/step2/features/
+results/step2/models/
+results/step3/features/
+results/step3/models/
+document_work/qa_round*/
+document_work/renders/*.png
